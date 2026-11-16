@@ -12,7 +12,7 @@ export default function Home() {
   return (
 
     <>
-    
+   
       {/* ============ HERO ============ */}
       <section className="hero" id="accueil">
         <div className="container hero-grid">

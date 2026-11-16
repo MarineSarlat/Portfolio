@@ -43,8 +43,8 @@ export const projects = [
     role: "Développement, design",
     tools: "Next.js, React, CSS",
     intro: [
-      "Premier projet de modélisation 3D, j'ai choisi de recréer les maisons emblématiques de l'univers de Bob l'éponge.",
-      "J'ai travaillé sur la forme, les courbes, les modifiers et les couleurs pour obtenir un rendu fidèle à l'original.",
+      "Réalisation d'un site web next.js pour les passionné de séries.",
+      "J'ai travaillé sur une authentification avec une gestion des erreurs en utilisant Better-Auth. Le site comprend un ensemble de components et _actions, ainsi que des relations avec une base de données afin que les données soient correctement gérées et en mémoire.",
     ],
     gallery: [{ src: "/projets/cineclub1.png", caption: "page-connexion", wide: true, pad: true }, 
       { src: "/projets/cineclub2.png", caption: "page-site", wide: true, pad: true },
@@ -115,6 +115,28 @@ export const projects = [
     ],
   },
   {
+    slug: "site-prestashop",
+    title: "Sylavanian Families - Exercice Prestashop",
+    category: "Web",
+    year: "2025",
+    image: "/projets/prestashop.png",
+    fit: "cover",
+    summary:
+      "Exercice de prise en main de Prestashop.",
+    tags: ["Prestashop", "PHP", "CSS", "UI/UX"],
+    role: "Intégration, Développement, Design",
+    tools: "Prestashop",
+    intro: [
+      "Développement complet d'un site web professionnel sous Prestashop.",
+      "L'objectif était de prendre en main les différentes fonctionnalités de la plateforme. De l'ajout de produits à la gestion des commandes, en passant par la personnalisation du thème et l'optimisation de l'expérience utilisateur.",
+    ],
+    // Ajout de l'URL du site pour l'iframe interactive
+    iframeUrl: "https://web-mmi2.iutbeziers.fr/~marine.sarlat/prestashop_edition_basic_version_8/",
+    gallery: [
+      { src: "/projets/prestashop.png", caption: "page d'accueil", wide: true },
+    ],
+  },
+  {
     slug: "roomies-application-colocation",
     title: "Roomies - Application de colocation",
     category: "UX/UI",
@@ -173,11 +195,10 @@ export const projects = [
     ],
     // Ajout de l'URL du site pour l'iframe interactive
     iframeUrl: "https://emilielimiemusic.fr/",
-    
     gallery: [
-      { src: "/projets/entreprise.png", caption: "Aperçu de la page d'accueil", wide: true },
+      { src: "/projets/emilie.png", caption: "page d'accueil", wide: true },
     ],
-},
+  },
   {
     slug: "arbre-noel",
     title: "Affiches numériquespour les arbres de Noël de Fabrikus World",
@@ -225,6 +246,28 @@ export const projects = [
     ],
   },
   {
+    slug: "site-mission-aurora",
+    title: "Exercice : site mission Aurora",
+    category: "Web",
+    year: "2026",
+    image: "/projets/aurora.png",
+    fit: "cover",
+    summary:
+      "Exercice de création d'un site web next.js pour la mission Aurora, un projet fictif de recherche spatiale.",
+    tags: ["Next.js", "PHP", "CSS", "UI/UX"],
+    role: "Intégration, Développement, Design",
+    tools: "Next.js, Tailwind CSS",
+    intro: [
+      "Exercice de création d'un site web next.js pour la mission Aurora, un projet fictif de recherche spatiale.",
+      "L'objectif était de créer un site web responsive et interactif, avec une navigation fluide et des animations pour présenter les différentes sections de la mission et son équipage.",
+    ],
+    // Ajout de l'URL du site pour l'iframe interactive
+    iframeUrl: "https://mission-aurora-drab.vercel.app/",
+    gallery: [
+      { src: "/projets/aurora.png", caption: "page d'accueil", wide: true },
+    ],
+},
+  {
     slug: "sofa",
     title: "SOFA - Modélisation 3D d'un canapé",
     category: "3D",
@@ -260,7 +303,7 @@ export const projects = [
       "Affiche commerciale pour les commerçants de Vias, pour promouvoir le parc d'attractions Fabrikus World.",
       "En suivant la direction artistique du parc, j'ai gardé les éléments indispensables demandé par mon entreprise en les intégrant dans un visuel festif et coloré, avec des éléments de Noël et des personnages du parc.",
     ],
-    gallery: [
+    g$allery: [
       { src: "/projets/afficheFW.png", caption: "Affiche commerciale Fabrikus World", wide: true },
     ],
   },
