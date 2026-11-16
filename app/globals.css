@@ -525,18 +525,15 @@ em {
   gap: clamp(24px, 5vw, 70px);
   align-items: center;
 }
-/* Sur grand écran, le badge est centré sous le menu : sa colonne a la même largeur que le menu.
-   Si le centrage n'est pas parfait, ajuste --nav-w (largeur du menu, environ 400px). */
 @media (min-width: 820px) {
   .hero-split { grid-template-columns: 1fr var(--nav-w, 400px); }
   .hero-split .badge-scene { justify-self: center; }
-
 }
 .badge-scene {
   width: clamp(130px, 17vw, 220px);
   perspective: 800px;
   justify-self: end;
-  animation: badge-float 6s ease-in-out infinite;
+  /* L'animation de flottement vertical a été retirée ici pour stabiliser le badge */
 }
 .badge {
   position: relative;
@@ -552,7 +549,6 @@ em {
   user-select: none;
   -webkit-user-drag: none;
 }
-/* Les reflets ne s'affichent que sur la forme du badge (grâce au masque) */
 .badge-shine,
 .badge-sweep {
   position: absolute;
@@ -578,9 +574,6 @@ em {
   mix-blend-mode: overlay;
   animation: badge-sweep 6s ease-in-out infinite;
 }
-@keyframes badge-float {
-  50% { transform: translateY(-8px); }
-}
 @keyframes badge-sweep {
   0%, 55% { background-position: 160% 0; }
   100% { background-position: -60% 0; }
@@ -589,6 +582,7 @@ em {
   .hero-split { grid-template-columns: 1fr; }
   .badge-scene { justify-self: start; width: 120px; }
 }
+
 
 .filters {
   display: flex;
