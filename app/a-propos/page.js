@@ -25,13 +25,8 @@ export default function AProposPage() {
               Salut, moi c'est <em>{site.name.split(" ")[0]}</em>.
             </h1>
             <p>
-              Je suis étudiante polyvalente en dernière année de BUT MMI à Béziers. J'ai grandi entre le sport de haut niveau, la scène et les cours, 
+              Je suis une étudiante polyvalente en dernière année de BUT MMI à Béziers. J'ai grandi au milieu du sport de haut niveau, de la scène et des cours, 
               ce qui m'a appris à être rigoureuse, créative et à m'adapter à toutes les situations.
-            </p>
-            <p>
-              Grande voyageuse, je collectionne les lieux, les couleurs et les rencontres, qui
-              nourrissent ensuite mon univers. Polyvalente, j'aime passer d'une maquette à une
-              interface, d'une identité à une édition.
             </p>
           
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 34 }}>
