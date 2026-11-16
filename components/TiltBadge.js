@@ -13,9 +13,11 @@ export default function TiltBadge({ src, alt = "Badge d'excellence" }) {
     const r = e.currentTarget.getBoundingClientRect();
     const x = (e.clientX - r.left) / r.width;
     const y = (e.clientY - r.top) / r.height;
+    
+    // Correction des signes moins (-) pour les calculs d'inclinaison et de position du reflet
     el.style.setProperty("--rx", `${(0.5 - y) * 26}deg`);
     el.style.setProperty("--ry", `${(x - 0.5) * 26}deg`);
-    el.style.setProperty("--mx", `${x * 100}%`);
+    el.style.setProperty("--mx`, `${x * 100}%`);
     el.style.setProperty("--my", `${y * 100}%`);
   };
 
