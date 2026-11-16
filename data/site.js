@@ -22,7 +22,7 @@ export const site = {
 export const pillars = [
   {
     title: "Développement Web",
-    text: "Maîtrise des langages fondamentaux (HTML, CSS, JavaScript, PHP) et intégration de solutions adaptées aux besoins, de la maquette au site fonctionnel (WordPress).",
+    text: "Maîtrise des langages fondamentaux (HTML, CSS, JavaScript, PHP) et intégration de solutions adaptées aux besoins, de la maquette (Figma) au site fonctionnel (WordPress).",
     color: "blush",
   },
   {

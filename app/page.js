@@ -10,7 +10,9 @@ export default function Home() {
   const featured = projects.slice(0, 4);
 
   return (
+
     <>
+    
       {/* ============ HERO ============ */}
       <section className="hero" id="accueil">
         <div className="container hero-grid">

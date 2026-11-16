@@ -31,6 +31,27 @@ export const projects = [
     ],
   },
   {
+    slug: "cine-club",
+    title: "Site Ciné CLub",
+    category: "Web",
+    year: "2026",
+    image: "/projets/cineclub2.png",
+    fit: "contain",
+    summary:
+      "Réalisation d'un site web next.js pour les passionné de séries.",
+    tags: ["Web", "Développement", "Design"],
+    role: "Développement, design",
+    tools: "Next.js, React, CSS",
+    intro: [
+      "Premier projet de modélisation 3D, j'ai choisi de recréer les maisons emblématiques de l'univers de Bob l'éponge.",
+      "J'ai travaillé sur la forme, les courbes, les modifiers et les couleurs pour obtenir un rendu fidèle à l'original.",
+    ],
+    gallery: [{ src: "/projets/cineclub1.png", caption: "page-connexion", wide: true, pad: true }, 
+      { src: "/projets/cineclub2.png", caption: "page-site", wide: true, pad: true },
+      { src: "/projets/cineclub3.png", caption: "page-site-detail", wide: true, pad: true },
+      { src: "/projets/cineclub4.png", caption: "page-site-recherche", wide: true, pad: true }],
+  },
+  {
     slug: "bob-l-eponge",
     title: "Les maisons de l'univers de Bob l'éponge",
     category: "3D",
