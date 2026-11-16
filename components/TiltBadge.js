@@ -2,8 +2,6 @@
 
 import { useRef } from "react";
 
-// Badge "3D brillant" : il s'incline légèrement vers la souris,
-// un reflet suit le curseur et un éclat passe de temps en temps.
 export default function TiltBadge({ src, alt = "Badge d'excellence" }) {
   const badge = useRef(null);
 
@@ -14,10 +12,9 @@ export default function TiltBadge({ src, alt = "Badge d'excellence" }) {
     const x = (e.clientX - r.left) / r.width;
     const y = (e.clientY - r.top) / r.height;
     
-    // Correction des signes moins (-) pour les calculs d'inclinaison et de position du reflet
     el.style.setProperty("--rx", `${(0.5 - y) * 26}deg`);
     el.style.setProperty("--ry", `${(x - 0.5) * 26}deg`);
-    el.style.setProperty("--mx`, `${x * 100}%`);
+    el.style.setProperty("--mx", `${x * 100}%`);
     el.style.setProperty("--my", `${y * 100}%`);
   };
 
