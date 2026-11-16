@@ -303,7 +303,7 @@ export const projects = [
       "Affiche commerciale pour les commerçants de Vias, pour promouvoir le parc d'attractions Fabrikus World.",
       "En suivant la direction artistique du parc, j'ai gardé les éléments indispensables demandé par mon entreprise en les intégrant dans un visuel festif et coloré, avec des éléments de Noël et des personnages du parc.",
     ],
-    g$allery: [
+    gallery: [
       { src: "/projets/afficheFW.png", caption: "Affiche commerciale Fabrikus World", wide: true },
     ],
   },
