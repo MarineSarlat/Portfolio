@@ -63,7 +63,7 @@ export default async function ProjectPage({ params }) {
             </h2>
           </Reveal>
           <Reveal delay={100}>
-            {project.intro.map((para, i) => (
+            {(project.intro || []).map((para, i) => (
               <p key={i} className={i === 0 ? "lead" : ""} style={i === 0 ? { maxWidth: "none" } : { color: "var(--ink-soft)" }}>
                 {para}
               </p>
@@ -99,7 +99,7 @@ export default async function ProjectPage({ params }) {
       <section style={{ paddingBottom: "clamp(60px, 8vw, 110px)" }}>
         <div className="container">
           <div className="gallery">
-            {project.gallery.map((g) => {
+            {(project.gallery || []).map((g) => {
               const embed = g.embed ? toEmbed(g.embed) : null;
               return (
                 <Reveal key={g.src || g.embed || g.video}>
@@ -124,7 +124,7 @@ export default async function ProjectPage({ params }) {
                 </Reveal>
               );
             })}
-          </div>
+                      </div>
         </div>
       </section>
 
