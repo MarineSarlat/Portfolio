@@ -6,21 +6,30 @@ export const stats = [
   { value: "6", label: "titres de championne de France" },
   { value: "3", label: "médailles internationales" },
   { value: "17 h", label: "d'entraînement par semaine" },
-  { value: "6 ans", label: "de chorégraphie en association" },
+  { value: "6 ans", label: "de création de chorégraphies pour une association de comédie musicale" },
 ];
 
 // Palmarès sportif. tone : gold | silver | bronze | rose | lilac
 export const sport = {
   title: "Gymnastique aérobic",
-  place: "Club formateur de Toulouse",
   period: "2017 – 2020",
-  text: "Cinq années de sport de haut niveau, jusqu'à 17 heures d'entraînement par semaine. Une discipline à la croisée du sport, de la danse et de la scène, qui a forgé ma rigueur et mon sens du spectacle.",
-  medals: [
-    { count: 2, label: "Médailles d'or", detail: "Compétition internationale", tone: "gold" },
-    { count: 1, label: "Médaille d'argent", detail: "Compétition internationale", tone: "silver" },
-    { count: 6, label: "Titres de championne de France", detail: "", tone: "rose" },
-    { count: 5, label: "Titres de vice-championne de France", detail: "", tone: "lilac" },
-    { count: 2, label: "Médailles de bronze", detail: "", tone: "bronze" },
+  text: "Cinq années de sport de haut niveau, au club formateur de Toulouse, jusqu'à 17 heures d'entraînement par semaine. Une discipline à la croisée du sport, de la danse et de la scène, qui a forgé ma rigueur et mon sens du spectacle.",
+   groups: [
+    {
+      title: "Compétition internationale",
+      medals: [
+        { count: 2, label: "Médailles d'or", tone: "gold" },
+        { count: 1, label: "Médaille d'argent", tone: "silver" },
+      ],
+    },
+    {
+      title: "Championnats de France",
+      medals: [
+        { count: 6, label: "Titres de championne de France", tone: "gold" },
+        { count: 5, label: "Titres de vice-championne de France", tone: "silver" },
+        { count: 2, label: "Médailles de bronze", tone: "bronze" },
+      ],
+    },
   ],
 };
 

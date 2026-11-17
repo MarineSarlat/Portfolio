@@ -10,16 +10,25 @@ export const metadata = {
 export default function DistinctionsPage() {
   return (
     <>
-      <section className="page-hero">
-        <div className="container">
-          <span className="eyebrow">Palmarès</span>
-          <h1 className="title-xl">
-            Scène, podiums &amp; <em>passion</em>.
-          </h1>
-          <p className="lead" style={{ marginTop: 26 }}>
-            Avant les écrans, il y a eu les tatamis, les plateaux et les projecteurs. Voici ce
-            qu'ils m'ont appris, et ce que j'en ai rapporté.
-          </p>
+            <section className="page-hero">
+        <div className="container hero-grid">
+          <div>
+            <span className="eyebrow">Palmarès</span>
+            <h1 className="title-xl">
+              Scène, podiums
+              <br />
+              &amp; <em>passion</em>.
+            </h1>
+            <p className="lead" style={{ marginTop: 26 }}>
+              Avant les écrans, il y a eu les parquets d'aérobic, les scènes et les projecteurs. Voici ce
+              qu'ils m'ont appris, et ce que j'ai remporté.
+            </p>
+          </div>
+
+          <div className="arch arch-empty">
+            <img src="/scene.png" alt="Marine Sarlat sur scène" /> 
+          
+          </div>
         </div>
       </section>
 
@@ -48,20 +57,26 @@ export default function DistinctionsPage() {
               </h2>
             </div>
             <p className="lead">
-              <strong style={{ color: "var(--ink)" }}>{sport.place}.</strong> {sport.text}
+              <strong style={{ color: "var(--ink)" }}>{sport.place}</strong> {sport.text}
             </p>
           </Reveal>
-          <div className="medals">
-            {sport.medals.map((m, i) => (
-              <Reveal key={m.label} delay={i * 70}>
-                <div className="medal">
-                  <span className={`medal-disc tone-${m.tone}`}>{m.count}</span>
-                  <h3>{m.label}</h3>
-                  {m.detail && <p>{m.detail}</p>}
-                </div>
-              </Reveal>
-            ))}
-          </div>
+            {sport.groups.map((g) => (
+                  <div className="medal-group" key={g.title}>
+                    <Reveal>
+                      <h3 className="medal-group-title">{g.title}</h3>
+                    </Reveal>
+                    <div className="medals">
+                      {g.medals.map((m, i) => (
+                        <Reveal key={m.label} delay={i * 70}>
+                          <div className="medal">
+                            <span className={`medal-disc tone-${m.tone}`}>{m.count}</span>
+                            <h3>{m.label}</h3>
+                          </div>
+                        </Reveal>
+                      ))}
+                    </div>
+                  </div>
+                ))}
         </div>
       </section>
 
