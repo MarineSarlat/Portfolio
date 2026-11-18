@@ -350,6 +350,7 @@ em {
   padding: 10px 16px;
   border-radius: 999px;
   background: rgba(251, 245, 240, 0.92);
+  font-family: var(--font-display);
   font-size: 0.82rem;
   text-align: center;
   font-weight: 500;
@@ -1157,4 +1158,52 @@ em {
 }
 @media (max-width: 560px) {
   .medals { grid-template-columns: 1fr; }
+}
+
+
+/* ============ Boutons de l'en-tête : hiérarchie claire ============ */
+.hero-actions {
+  gap: 12px;
+  align-items: center;
+}
+.hero-actions .btn {
+  padding: 14px 24px;
+  font-size: 0.97rem;
+  white-space: nowrap;
+}
+/* 1. Bouton principal : plein, avec une ombre douce */
+.hero-actions .btn:not(.ghost):not(.soft) {
+  box-shadow: 0 10px 24px rgba(43, 21, 48, 0.2);
+}
+/* 2. Bouton secondaire : contour, fond léger */
+.hero-actions .btn.ghost {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(43, 21, 48, 0.35);
+}
+.hero-actions .btn.ghost:hover {
+  border-color: var(--ink);
+}
+/* 3. Bouton discret : rose poudré, sans contour (CV) */
+.hero-actions .btn.soft {
+  background: var(--blush);
+  border-color: var(--blush);
+  color: var(--ink);
+}
+.hero-actions .btn.soft:hover {
+  background: #efbfce;
+  border-color: #efbfce;
+  color: var(--ink);
+  box-shadow: 0 10px 24px rgba(179, 38, 107, 0.2);
+}
+.hero-actions .btn.soft .arrow {
+  transition: transform 0.3s ease;
+}
+.hero-actions .btn.soft:hover .arrow {
+  transform: translateY(3px);
+}
+@media (max-width: 1200px) {
+  .hero-actions .btn { padding: 13px 20px; font-size: 0.92rem; }
+}
+@media (max-width: 560px) {
+  .hero-actions .btn { width: 100%; justify-content: center; padding: 14px 24px; font-size: 0.97rem; }
 }

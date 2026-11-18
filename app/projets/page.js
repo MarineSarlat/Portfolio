@@ -18,7 +18,7 @@ export default function ProjetsPage() {
               Mes <em>projets</em>
             </h1>
             <p className="lead" style={{ marginTop: 26 }}>
-              Une sélection de mes réalisations. Filtre par catégorie pour explorer ce qui t'intéresse.
+              Une sélection de mes réalisations. Explorez les différentes catégories pour découvrir mon univers.
             </p>
           </div>
           <TiltBadge src="/badge.png" alt="Prix d'excellence MMI 2026, IUT de Béziers" />

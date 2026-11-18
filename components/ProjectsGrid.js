@@ -53,7 +53,7 @@ export default function ProjectsGrid() {
       ) : (
         <div className="projects-grid animating" key={animKey}>
           {visible.map((p, i) => (
-            <ProjectCard key={p.slug} project={p} style={{ animationDelay: `${i * 70}ms` }} />
+            <ProjectCard key={p.slug} project={p} from={active} style={{ animationDelay: `${i * 70}ms` }} />
           ))}
         </div>
       )}

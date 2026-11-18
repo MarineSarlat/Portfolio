@@ -14,7 +14,7 @@ export default function ContactPage() {
         <div className="container">
           <span className="eyebrow">Contact</span>
           <h1 className="title-xl">
-            Créons quelque chose <em>ensemble</em>.
+            Créons vos prochains projets <em>ensemble</em>.
           </h1>
         </div>
       </section>
@@ -22,7 +22,7 @@ export default function ContactPage() {
         <div className="container contact-grid">
           <Reveal className="contact-info">
             <p className="lead">
-              Un projet, une question, une envie de collaboration ? Écris-moi, je te réponds avec
+              Un projet, une question, une envie de collaboration ? Écrivez-moi, je vous réponds avec
               plaisir.
             </p>
             <a className="big" href={`mailto:${site.email}`}>{site.email}</a>

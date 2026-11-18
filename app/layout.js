@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 
 export const metadata = {
   title: {
-    default: `${site.name} — ${site.role}`,
+    default: `${site.name}`,
     template: `%s — ${site.name}`,
   },
   description: site.tagline,

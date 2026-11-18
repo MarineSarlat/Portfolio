@@ -31,9 +31,13 @@ export default function Header() {
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container header-inner">
-        <Link href="/" className="logo" aria-label="Accueil">
-          <img src="/logo4.png" alt="Logo de Sarlat Marine" width={70} height={80} />
-        </Link>
+        {/* Groupe Logo + Badge rapprochés */}
+        <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <Link href="/" className="logo" aria-label="Accueil">
+            <img src="/logo.png" alt="Logo de Sarlat Marine" width={60} height={70} />
+          </Link>
+          <img src="/badge.png" alt="Badge excellence" width={60} height={60} />
+        </div>
 
         <nav className={`nav ${open ? "open" : ""}`} aria-label="Navigation principale">
           {site.nav.map((item) => (

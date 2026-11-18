@@ -39,6 +39,25 @@ export default function AProposPage() {
         </div>
       </section>
 
+      {/* 1. COMPÉTENCES */}
+      <section className="section dark-section">
+        <div className="container">
+          <Reveal>
+            <span className="eyebrow">Compétences</span>
+            <h2 className="title-lg">Ce que je <em>maîtrise</em></h2>
+            <div className="chips">
+              {skills.map((s) => (
+                <span className="chip" key={s}>{s}</span>
+              ))}
+            </div>
+            <p style={{ marginTop: 28, color: "rgba(251,245,240,.7)" }}>
+              Outils : {tools.join(" · ")}
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 2. VALEURS */}
       <section className="section">
         <div className="container">
           <Reveal>
@@ -58,6 +77,22 @@ export default function AProposPage() {
         </div>
       </section>
 
+      {/* 3. HORS ÉCRAN */}
+      <section className="section">
+        <div className="container">
+          <Reveal>
+            <span className="eyebrow">Hors écran</span>
+            <h2 className="title-lg">Ce qui m'<em>inspire</em></h2>
+            <div className="interests">
+              {interests.map((it) => (
+                <span key={it}>{it}</span>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 4. MON CHEMIN JUSQU'ICI (PARCOURS) */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal>
@@ -78,37 +113,6 @@ export default function AProposPage() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section dark-section">
-        <div className="container">
-          <Reveal>
-            <span className="eyebrow">Compétences</span>
-            <h2 className="title-lg">Ce que je <em>maîtrise</em></h2>
-            <div className="chips">
-              {skills.map((s) => (
-                <span className="chip" key={s}>{s}</span>
-              ))}
-            </div>
-            <p style={{ marginTop: 28, color: "rgba(251,245,240,.7)" }}>
-              Outils : {tools.join(" · ")}
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <Reveal>
-            <span className="eyebrow">Hors écran</span>
-            <h2 className="title-lg">Ce qui m'<em>inspire</em></h2>
-            <div className="interests">
-              {interests.map((it) => (
-                <span key={it}>{it}</span>
-              ))}
-            </div>
-          </Reveal>
         </div>
       </section>
     </>

@@ -5,6 +5,26 @@
 // - Place tes fichiers dans /public/projets/ et référence-les avec "/projets/mon-fichier.jpg".
 
 export const projects = [
+  {
+    slug: "site-portfolio",
+    title: "Projet personelle : déployement de mon portfolio profesionnel",
+    category: "Web",
+    year: "2026",
+    image: "/projets/portfolio.png",
+    fit: "cover",
+    summary:
+      "Développement complet d’un site web professionnel en Next.js pour présenter mes projets et mon parcours.",
+    tags: ["Prestashop", "PHP", "CSS", "UI/UX"],
+    role: "Intégration, Développement, Design",
+    tools: "Prestashop",
+    intro: [
+      "Développement complet d’un site web professionnel en Next.js pour présenter mes projets et mon parcours.",
+      "L’objectif était de créer un site web responsive et interactif, avec une navigation fluide et des animations pour présenter les différentes sections de mon portfolio et mes projets.",
+    ],
+    // Ajout de l'URL du site pour l'iframe interactive
+    iframeUrl: "https://portfolio-marine.vercel.app/",
+    
+  },
   
     {
     slug: "mmi-du-reve-a-la-realite",                 // ← court, en minuscules, sans accents ni espaces (sert pour l'adresse /projets/mon-projet-video)
@@ -18,8 +38,8 @@ export const projects = [
     role: "Écriture, réalisation, montage",             // ← ton rôle (page projet)
     tools: "DaVinci Resolve",                    // ← tes outils (page projet)
     intro: [
-      "Trophée de Bronze au concours vidéo Je filme ma formation",   // ← 
-      "Le but était de créer une vidéo promotionnelle de 3 min, en équipe, de la formation BUT MMI de l'IUT de Béziers", // ←
+      "Trophée de Bronze au concours vidéo Je filme ma formation, sur 588 vidéos sélectionnées",   // ← 
+      "Création d’une vidéo promotionnelle de 3 minutes sur la formation BUT MMI de l’IUT de Béziers, en équipe de 4. Pour mener à bien ce projet, nous avons élaboré un découpage technique afin de structurer les différentes étapes de réalisation.", // ←
     ],
     gallery: [
       // 👇 TA VIDÉO YOUTUBE : colle simplement le lien de la vidéo
@@ -28,28 +48,28 @@ export const projects = [
       // Tu peux ajouter d'autres vidéos ou des images à la suite :
       // { embed: "https://youtu.be/YYYYYYYYYYY", caption: "Deuxième vidéo", wide: true },
       // { src: "/projets/autre-image.jpg", caption: "Une image du projet", wide: true },
+    { src: "/projets/dt.png", caption: "Decoupage technique", wide: true },
     ],
   },
   {
-    slug: "cine-club",
-    title: "Site Ciné CLub",
+    slug: "site-wordpress-entreprise",
+    title: "Refonte du site web pour la chanteuse Emilie Limie",
     category: "Web",
     year: "2026",
-    image: "/projets/cineclub2.png",
-    fit: "contain",
+    image: "/projets/emilie.png",
+    fit: "cover",
     summary:
-      "Réalisation d'un site web next.js pour les passionné de séries.",
-    tags: ["Web", "Développement", "Design"],
-    role: "Développement, design",
-    tools: "Next.js, React, CSS",
+      "Création et développement d'un site vitrine sous WordPress sur mesure pour une entreprise.",
+    tags: ["WordPress", "PHP", "CSS", "UI/UX"],
+    role: "Intégration, Développement, Design",
+    tools: "WordPress, Elementor, Figma",
     intro: [
-      "Réalisation d'un site web next.js pour les passionné de séries.",
-      "J'ai travaillé sur une authentification avec une gestion des erreurs en utilisant Better-Auth. Le site comprend un ensemble de components et _actions, ainsi que des relations avec une base de données afin que les données soient correctement gérées et en mémoire.",
+      "Développement complet d'un site web professionnel sous WordPress.",
+      "En tant que cheffe de projet lors de l’événement pédagogique « Marathon MMI 2025 », j’ai coordonné une équipe de 6 personnes pour concevoir, en seulement 4 jours, une communication numérique globale (charte graphique, affiches, interview vidéo et site WordPress). J’ai également pris en charge la conception technique et l’intégration complète du site web sous WordPress. La qualité de notre travail a convaincu la cliente, Emilie Limiè, de remplacer définitivement son ancien site par le nouveau que nous avions réalisé.",
     ],
-    gallery: [{ src: "/projets/cineclub1.png", caption: "page-connexion", wide: true, pad: true }, 
-      { src: "/projets/cineclub2.png", caption: "page-site", wide: true, pad: true },
-      { src: "/projets/cineclub3.png", caption: "page-site-detail", wide: true, pad: true },
-      { src: "/projets/cineclub4.png", caption: "page-site-recherche", wide: true, pad: true }],
+    // Ajout de l'URL du site pour l'iframe interactive
+    iframeUrl: "https://emilielimiemusic.fr/",
+   
   },
   {
     slug: "bob-l-eponge",
@@ -64,8 +84,8 @@ export const projects = [
     role: "Création 3D, modélisation",
     tools: "3ds Max",
     intro: [
-      "Premier projet de modélisation 3D, j'ai choisi de recréer les maisons emblématiques de l'univers de Bob l'éponge.",
-      "J'ai travaillé sur la forme, les courbes, les modifiers et les couleurs pour obtenir un rendu fidèle à l'original.",
+      "Premier projet de modélisation 3D.",
+      "J'ai choisi de recréer les maisons emblématiques de l'univers de Bob l'éponge. Pour cela, j'ai travaillé sur la forme, les courbes, les modifiers et les couleurs pour obtenir un rendu fidèle à l'original.",
     ],
     gallery: [{ src: "/projets/bob1.webp", caption: "Vue de haut maisons - 3D", wide: true, pad: true }, 
       { src: "/projets/bob2.webp", caption: "Vue de face maisons - 3D", wide: true, pad: true }],
@@ -85,6 +105,7 @@ export const projects = [
       "Vidéo de présentation de la recette d'un smoothie bowl",   // ← 
       "En équipe nous avons créé un storyboard en réfléchissant préciser aux transisiotns entre les plans pour recréer le style B-Roll.", // ←
     ],
+    pdfUrl: "/projets/broll.pdf",
     gallery: [
       // 👇 TA VIDÉO YOUTUBE : colle simplement le lien de la vidéo
       { embed: "https://youtu.be/I_az7UBsXU0", caption: "B-Roll", wide: true },
@@ -102,13 +123,13 @@ export const projects = [
     image: "/projets/alice.png",
     fit: "cover",
     summary:
-      "Exercice de création graphique inspiré du monde onirique d'Alice au pays des merveilles.",
+      "Exercice de création graphique inspiré de l’univers onirique d’Alice au pays des merveilles..",
     tags: ["Graphisme", "Illustration", "Photoshop", "InDesign"],
     role: "Illustration, Photoshop, InDesign",
     tools: "Illustrator, InDesign, Photoshop",
     intro: [
-      "Exercice de création graphique inspiré du monde onirique d'Alice au pays des merveilles.",
-      "C et exercice m'a permis de travailler sur la composition, les couleurs et les textures pour créer un univers onirique et immersif, comportant des éléments réelles et des éléments dessinés.",
+      "Exercice de création graphique inspiré de l’univers onirique d’Alice au pays des merveilles.",
+      "Cet exercice m’a permis de travailler sur la composition, les couleurs et les textures afin de créer un univers immersif, mêlant des éléments photographiques réels et des éléments dessinés.",
     ],
     gallery: [
       { src: "/projets/alice.png", caption: "Alice dans le monde onirique", wide: true },
@@ -127,8 +148,8 @@ export const projects = [
     role: "Intégration, Développement, Design",
     tools: "Prestashop",
     intro: [
-      "Développement complet d'un site web professionnel sous Prestashop.",
-      "L'objectif était de prendre en main les différentes fonctionnalités de la plateforme. De l'ajout de produits à la gestion des commandes, en passant par la personnalisation du thème et l'optimisation de l'expérience utilisateur.",
+      "Développement complet d’un site web professionnel sous PrestaShop.",
+      "L’objectif était de prendre en main les différentes fonctionnalités de la plateforme, de l’ajout de produits à la gestion des commandes, en passant par la personnalisation du thème et l’optimisation de l’expérience utilisateur.",
     ],
     // Ajout de l'URL du site pour l'iframe interactive
     iframeUrl: "https://web-mmi2.iutbeziers.fr/~marine.sarlat/prestashop_edition_basic_version_8/",
@@ -178,42 +199,41 @@ export const projects = [
     ],
   },
   {
-    slug: "site-wordpress-entreprise",
-    title: "Refonte du site web pour la chanteuse Emilie Limie",
+    slug: "cine-club",
+    title: "Site Ciné CLub",
     category: "Web",
     year: "2026",
-    image: "/projets/emilie.png",
-    fit: "cover",
+    image: "/projets/cineclub2.png",
+    fit: "contain",
     summary:
-      "Création et développement d'un site vitrine sous WordPress sur mesure pour une entreprise.",
-    tags: ["WordPress", "PHP", "CSS", "UI/UX"],
-    role: "Intégration, Développement, Design",
-    tools: "WordPress, Elementor, Figma",
+      "Réalisation d'un site web next.js pour les passionné de séries.",
+    tags: ["Web", "Développement", "Design"],
+    role: "Développement, design",
+    tools: "Next.js, React, CSS",
     intro: [
-      "Développement complet d'un site web professionnel sous WordPress.",
-      "L'objectif était de moderniser l'image de marque de l'entreprise tout en garantissant une navigation fluide et responsive.",
+      "Réalisation d’un site web sous Next.js destiné aux passionnés de séries.",
+      "J’ai travaillé sur la mise en place d’un système d’authentification avec gestion des erreurs à l’aide de Better Auth. Le site repose sur un ensemble de _components et d’_actions, ainsi que sur des relations avec une base de données permettant de stocker, gérer et récupérer correctement les données.",
     ],
-    // Ajout de l'URL du site pour l'iframe interactive
-    iframeUrl: "https://emilielimiemusic.fr/",
-    gallery: [
-      { src: "/projets/emilie.png", caption: "page d'accueil", wide: true },
-    ],
+    gallery: [{ src: "/projets/cineclub1.png", caption: "page-connexion", wide: true, pad: true }, 
+      { src: "/projets/cineclub2.png", caption: "page-site", wide: true, pad: true },
+      { src: "/projets/cineclub3.png", caption: "page-site-detail", wide: true, pad: true },
+      { src: "/projets/cineclub4.png", caption: "page-site-recherche", wide: true, pad: true }],
   },
   {
     slug: "arbre-noel",
-    title: "Affiches numériquespour les arbres de Noël de Fabrikus World",
+    title: "Affiches numériques pour les arbres de Noël de Fabrikus World",
     category: "Graphisme",
     year: "2025",
     image: "/projets/arbreNoel1.png",
     fit: "cover",
     summary:
-      "Visuel pour les affiches de leurs journées événement Arbres de Noël avec des comités d'entreprises.",
+      "Visuel pour les affiches de leurs journées événements Arbres de Noël avec des comités d'entreprises.",
     tags: ["Direction artistique", "Illustration", "Photoshop", "InDesign"],
     role: "Direction artistique, Illustration, Photoshop, InDesign",
     tools: "Illustrator, InDesign, Photoshop",
     intro: [
-      "Visuel pour les affiches de les journées événement Arbres de Noël organisé par Fabrikus World, pour les entreprises partenaires.",
-      "En suivant la direction artistique du parc, j'ai gardé les éléments indispensables demandé par mon entreprise en les intégrant dans un visuel festif et coloré, avec des éléments de Noël et des personnages du parc.",
+      "Création de visuels pour les affiches des journées événementielles « Arbres de Noël », organisées par Fabrikus World pour ses entreprises partenaires.",
+      "En respectant la direction artistique du parc, j’ai intégré les éléments indispensables demandés par mon entreprise dans un visuel festif et coloré, mêlant des éléments de Noël et les personnages emblématiques du parc.",
     ],
     gallery: [
       { src: "/projets/arbreNoel1.png", caption: "Affiche 1 des arbres de Noël", wide: true },
@@ -225,20 +245,20 @@ export const projects = [
     slug: "bref-marine-sarlat",                 // ← court, en minuscules, sans accents ni espaces (sert pour l'adresse /projets/mon-projet-video)
     title: "Bref je m'appelle Marine Sarlat",             // ← titre affiché
     category: "Audiovisuel",                  // ← catégorie : crée le filtre automatiquement
-    year: "2026",                             // ← année
+    year: "2025",                             // ← année
     image: "/projets/Bref.png",   // ← IMAGE de la carte (voir étape 2)
     fit: "cover",                             // "cover" = image remplit la carte, "contain" = image entière visible
-    summary: "Création d'un CV vidéo pour présenter mes projets", // ←
+    summary: "Création d'un CV vidéo pour ma recherche d'alternance", // ←
     tags: ["Audiovisuel", "Montage", "Vidéo"],        // ← petits mots-clés
     role: "Écriture, réalisation, figuration, montage",             // ← ton rôle (page projet)
     tools: "DaVinci Resolve",                    // ← tes outils (page projet)
     intro: [
-      "Création d'un CV vidéo permettant de présenter mes projets",   // ← 
-      "En 75 seconds, il a fallu que je puisse être accrocheuse et percutante, tout en expliquant mes projets avec précision.", // ←
+      "Création d'un CV vidéo pour ma recherche d'alternance",   // ← 
+      "Projet personelle dans lequel je me suis fixé pour objectif, en 75 seconds, être accrocheuse et percutante, tout en expliquant qui je suis et mon parcours.", // ←
     ],
     gallery: [
       // 👇 TA VIDÉO YOUTUBE : colle simplement le lien de la vidéo
-      { embed: "https://youtu.be/u72eKBB0Z20", caption: "Bref", wide: true },
+      { embed: "https://youtu.be/8KaYJG0k8Sc?si=QIvPjdQzsJ9H1rZn", caption: "Bref", wide: true },
 
       // Tu peux ajouter d'autres vidéos ou des images à la suite :
       // { embed: "https://youtu.be/YYYYYYYYYYY", caption: "Deuxième vidéo", wide: true },
@@ -253,13 +273,13 @@ export const projects = [
     image: "/projets/aurora.png",
     fit: "cover",
     summary:
-      "Exercice de création d'un site web next.js pour la mission Aurora, un projet fictif de recherche spatiale.",
+      "Exercice de création d’un site web sous Next.js pour la mission Aurora, un projet fictif de recherche spatiale.",
     tags: ["Next.js", "PHP", "CSS", "UI/UX"],
     role: "Intégration, Développement, Design",
     tools: "Next.js, Tailwind CSS",
     intro: [
-      "Exercice de création d'un site web next.js pour la mission Aurora, un projet fictif de recherche spatiale.",
-      "L'objectif était de créer un site web responsive et interactif, avec une navigation fluide et des animations pour présenter les différentes sections de la mission et son équipage.",
+      "Exercice de création d’un site web sous Next.js pour la mission Aurora, un projet fictif de recherche spatiale.",
+      "L’objectif était de concevoir un site web responsive et interactif, avec une navigation fluide et des animations permettant de présenter les différentes sections de la mission ainsi que son équipage.",
     ],
     // Ajout de l'URL du site pour l'iframe interactive
     iframeUrl: "https://mission-aurora-drab.vercel.app/",

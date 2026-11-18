@@ -105,34 +105,7 @@ export default function DistinctionsPage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <Reveal>
-            <span className="eyebrow">Création</span>
-            <h2 className="title-lg" style={{ marginBottom: 46 }}>
-              Distinctions <em>créatives</em>
-            </h2>
-          </Reveal>
-          <div className="values">
-            {creations.map((c, i) => (
-              <Reveal key={c.title} delay={i * 100}>
-                <div className="value">
-                  <span className="award-year">{c.year}</span>
-                  <h3>{c.title}</h3>
-                  <p style={{ fontWeight: 600, color: "var(--ink)", marginBottom: 8 }}>{c.place}</p>
-                  <p>{c.text}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-
-          <Reveal className="cv-cta" style={{ marginTop: 70 }}>
-            <Link href="/contact" className="btn">
-              Une collaboration ? Parlons-en <span className="arrow">→</span>
-            </Link>
-          </Reveal>
-        </div>
-      </section>
+      
     </>
   );
 }

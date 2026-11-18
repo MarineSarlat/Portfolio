@@ -26,12 +26,16 @@ export default function Home() {
                 Voir mes projets <span className="arrow">→</span>
               </Link>
               <a href="#contact" className="btn ghost">Me contacter</a>
+             
+            <a href="/cv-marine-sarlat.pdf" download className="btn soft">
+              Télécharger mon CV <span className="arrow">↓</span>
+            </a>
+        
             </div>
           </div>
           <div className="arch">
-            {/* Remplace par ta photo : /public/portrait.jpg */}
             <img src="/projets/Marine.jpeg" alt="Portrait de Marine" />
-            <div className="arch-caption">Polyvalence, sensibilité, exigence : trois mots pour créer.</div>
+            <div className="arch-caption ">Polyvalence, sensibilité, exigence : trois facettes de ma créativité.</div>
           </div>
         </div>
       </section>
@@ -42,9 +46,9 @@ export default function Home() {
         <div className="intro-grid" style={{ display: "grid", gridTemplateColumns: "auto auto", justifyContent: "start", gap: "3rem", alignItems: "center" }}>
           <Reveal delay={100} className="intro-text">
             <p>
-              Étudiante en dernière année de BUT MMI et actuellement en échange universitaire au Québec, je 
-              me spécialise en développement web pour concevoir, coder et structurer des applications et 
-              des sites web sur mesure.
+              Étudiante en dernière année de BUT MMI et actuellement en échange universitaire au Québec, 
+              je me spécialise en développement web pour concevoir, coder et structurer des applications 
+              et des sites web sur mesure.
             </p>
             <p>
               En associant mes compétences techniques en programmation à une maîtrise des enjeux de communication, 
@@ -73,29 +77,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ============ PROJETS ============ */}
-      <section className="section" style={{ paddingTop: 0 }} id="projets">
-        <div className="container">
-          <Reveal className="section-head">
-            <div>
-              <span className="eyebrow">Sélection</span>
-              <h2 className="title-lg">Projets <em>récents</em></h2>
-            </div>
-            <Link href="/projets" className="btn ghost">
-              Tous les projets <span className="arrow">→</span>
-            </Link>
-          </Reveal>
-          <div className="projects-grid">
-            {featured.map((p, i) => (
-              <Reveal key={p.slug} delay={(i % 2) * 100}>
-                <ProjectCard project={p} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============ COMPÉTENCES + PARCOURS ============ */}
+        {/* ============ COMPÉTENCES + PARCOURS ============ */}
       <section className="section dark-section" id="parcours">
         <div className="container">
           <Reveal>
@@ -128,21 +110,48 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-                    {/* Bouton CV : place ton fichier dans /public/cv-marine-sarlat.pdf */}
-          <Reveal style={{ marginTop: 56, display: "flex", justifyContent: "center" }}>
-            <a className="btn" href="/cv-marine-sarlat3.pdf" download>
-              Télécharger mon CV <span className="arrow">↓</span>
-            </a>
-          </Reveal>
+          
         </div>
       </section>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      {/* ============ PROJETS ============ */}
+      <section className="section" style={{ paddingTop: 0 }} id="projets">
+        <div className="container">
+          <Reveal className="section-head">
+            <div>
+              <span className="eyebrow">Sélection</span>
+              <h2 className="title-lg">Projets <em>coup de coeur</em></h2>
+            </div>
+            <Link href="/projets" className="btn ghost">
+              Tous les projets <span className="arrow">→</span>
+            </Link>
+          </Reveal>
+          <div className="projects-grid">
+            {featured.map((p, i) => (
+              <Reveal key={p.slug} delay={(i % 2) * 100}>
+                <ProjectCard project={p} />
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* ============ CONTACT ============ */}
       <section className="section" id="contact">
         <div className="container contact-grid">
           <Reveal className="contact-info">
             <span className="eyebrow">Contact</span>
-            <h2 className="title-lg">Travaillons <em>ensemble</em>.</h2>
+            <h2 className="title-lg">Créons vos prochains projets <em>ensemble</em>.</h2>
             <a className="big" href={`mailto:${site.email}`}>{site.email}</a>
             <div className="contact-list">
               {site.socials.map((s) => (

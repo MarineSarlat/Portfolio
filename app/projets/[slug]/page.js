@@ -1,6 +1,7 @@
-import Link from "next/link";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import Reveal from "@/components/Reveal";
+import { BackLink, BackLinkView, NextProject, NextProjectView } from "@/components/ProjectNav";
 import { projects } from "@/data/projects";
 
 // Transforme un lien YouTube ou Vimeo classique en lien "embed" utilisable dans le site.
@@ -32,17 +33,20 @@ export async function generateMetadata({ params }) {
 
 export default async function ProjectPage({ params }) {
   const { slug } = await params;
+
   const index = projects.findIndex((p) => p.slug === slug);
   if (index === -1) notFound();
 
   const project = projects[index];
-  const next = projects[(index + 1) % projects.length];
+  const nextAll = projects[(index + 1) % projects.length];
 
   return (
     <>
       <section className="page-hero">
         <div className="container">
-          <Link href="/projets" className="eyebrow">← Tous les projets</Link>
+          <Suspense fallback={<BackLinkView filter={null} query="" />}>
+            <BackLink slug={slug} />
+          </Suspense>
           <h1 className="title-xl" style={{ fontSize: "clamp(2.4rem, 5.4vw, 4.4rem)" }}>
             {project.title}
           </h1>
@@ -72,7 +76,7 @@ export default async function ProjectPage({ params }) {
         </div>
       </section>
 
-      {/* Intégration du site WordPress en Iframe si la propriété iframeUrl existe dans les données du projet */}
+      {/* Intégration du site WordPress / Iframe si la propriété iframeUrl existe */}
       {project.iframeUrl && (
         <section style={{ paddingBottom: 60 }}>
           <div className="container">
@@ -81,7 +85,6 @@ export default async function ProjectPage({ params }) {
                 <h3 className="title-lg" style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", marginBottom: "20px" }}>
                   Aperçu du <em>site en direct</em>
                 </h3>
-                {/* Conteneur avec des bords ronds (borderRadius) */}
                 <div style={{ width: "100%", height: "600px", borderRadius: "16px", overflow: "hidden" }} className="border border-gray-200 shadow-lg bg-white">
                   <iframe 
                     src={project.iframeUrl} 
@@ -96,6 +99,7 @@ export default async function ProjectPage({ params }) {
         </section>
       )}
 
+      {/* 1. LA GALERIE (Vidéo / Images) en premier */}
       <section style={{ paddingBottom: "clamp(60px, 8vw, 110px)" }}>
         <div className="container">
           <div className="gallery">
@@ -124,21 +128,44 @@ export default async function ProjectPage({ params }) {
                 </Reveal>
               );
             })}
-                      </div>
+          </div>
         </div>
       </section>
 
+      {/* 2. LE PDF (pdfUrl) apparaît APRÈS la galerie */}
+      {project.pdfUrl && (
+        <section style={{ paddingBottom: 60 }}>
+          <div className="container">
+            <Reveal>
+              <div style={{ width: "100%" }}>
+                <h3 className="title-lg" style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", marginBottom: "20px" }}>
+                  Aperçu du <em>document</em>
+                </h3>
+                <div style={{ width: "100%", height: "600px", borderRadius: "16px", overflow: "hidden" }} className="border border-gray-200 shadow-lg bg-white">
+                  <object 
+                    data={project.pdfUrl} 
+                    type="application/pdf" 
+                    style={{ width: "100%", height: "100%", border: "0" }}
+                  >
+                    <p style={{ padding: "20px" }}>
+                      Ton navigateur ne peut pas afficher ce PDF directement. 
+                      <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--magenta)", textDecoration: "underline" }}>
+                        Télécharge-le ici
+                      </a>.
+                    </p>
+                  </object>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
       <section style={{ paddingBottom: "clamp(70px, 9vw, 130px)" }}>
         <div className="container">
-          <Link href={`/projets/${next.slug}`} className="next-project">
-            <div>
-              <span>Projet suivant</span>
-              <strong>{next.title}</strong>
-            </div>
-            <span className="btn ghost" style={{ textTransform: "none", letterSpacing: 0, fontSize: "1rem", color: "var(--ink)" }}>
-              Découvrir <span className="arrow">→</span>
-            </span>
-          </Link>
+          <Suspense fallback={<NextProjectView next={nextAll} filter={null} query="" />}>
+            <NextProject slug={slug} />
+          </Suspense>
         </div>
       </section>
     </>

@@ -22,11 +22,11 @@ export default function ContactForm() {
       <div className="form-row">
         <div className="field">
           <label htmlFor="nom">Nom</label>
-          <input id="nom" name="nom" type="text" required placeholder="Ton nom" autoComplete="name" />
+          <input id="nom" name="nom" type="text" required placeholder="Nom" autoComplete="name" />
         </div>
         <div className="field">
           <label htmlFor="email">Email</label>
-          <input id="email" name="email" type="email" required placeholder="toi@exemple.fr" autoComplete="email" />
+          <input id="email" name="email" type="email" required placeholder="vous@exemple.fr" autoComplete="email" />
         </div>
       </div>
       <div className="field">
