@@ -20,6 +20,7 @@ export const projects = [
     intro: [
       "Développement complet d’un site web professionnel en Next.js pour présenter mes projets et mon parcours.",
       "L’objectif était de créer un site web responsive et interactif, avec une navigation fluide et des animations pour présenter les différentes sections de mon portfolio et mes projets.",
+      "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/Portfolio"
     ],
     // Ajout de l'URL du site pour l'iframe interactive
     iframeUrl: "https://portfolio-marine.vercel.app/",
@@ -116,6 +117,27 @@ export const projects = [
     ],
   },
   {
+    slug: "site-jeu-unity",
+    title: "Premier jeu vidéo sous Unity : Les Dents de la Mer Enfant ",
+    category: "Jeu Vidéo",
+    year: "2026",
+    image: "/projets/unity.png",
+    fit: "cover",
+    summary:
+      "Exercice de création d’un jeu vidéo sous Unity.",
+    tags: ["Unity", "C#", "JavaScript", "UI/UX"],
+    role: "Intégration, Développement, Design",
+    tools: "Unity, C#",
+    intro: [
+      "Exercice de création d’un jeu vidéo sous Unity.",
+      "L'objectif était de créé un jeu qui prend en compte des collision entre le jouer principal et les ennemis, ainsi que la gestion de la vie du joueur et des ennemis. J'ai également travaillé sur l'interface utilisateur pour afficher la vie du joueur et le score.",
+    ],
+    // Ajout de l'iframe interactive Itch.io
+    iframeUrl: "https://itch.io/embed-upload/20647945?color=333333",
+   
+  },
+  
+  {
     slug: "alice",
     title: "Exercice du Monde Onirique, In and Out d'Alice au pays des merveilles",
     category: "Graphisme",
@@ -157,6 +179,7 @@ export const projects = [
       { src: "/projets/prestashop.png", caption: "page d'accueil", wide: true },
     ],
   },
+  
   {
     slug: "roomies-application-colocation",
     title: "Roomies - Application de colocation",
@@ -213,6 +236,7 @@ export const projects = [
     intro: [
       "Réalisation d’un site web sous Next.js destiné aux passionnés de séries.",
       "J’ai travaillé sur la mise en place d’un système d’authentification avec gestion des erreurs à l’aide de Better Auth. Le site repose sur un ensemble de _components et d’_actions, ainsi que sur des relations avec une base de données permettant de stocker, gérer et récupérer correctement les données.",
+     "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/SiteWeb5-mi-session-2"
     ],
     gallery: [{ src: "/projets/cineclub1.png", caption: "page-connexion", wide: true, pad: true }, 
       { src: "/projets/cineclub2.png", caption: "page-site", wide: true, pad: true },
@@ -240,7 +264,27 @@ export const projects = [
       { src: "/projets/arbreNoel2.png", caption: "Affiche 2 des arbres de Noël", wide: true },
     ],
   },
-  
+  {
+    slug: "site-repaire-obscur",
+    title: "Premier jeu vidéo à partir du template Phaser : Repaire Obscur",
+    category: "Jeu Vidéo",
+    year: "2026",
+    image: "/projets/phaser.png",
+    fit: "cover",
+    summary:
+      "Exercice de création d’un jeu vidéo sous Phaser.",
+    tags: ["Phaser", "JavaScript", "CSS", "UI/UX"],
+    role: "Intégration, Développement, Design",
+    tools: "Phaser, JavaScript",
+    intro: [
+      "Exercice de création d’un jeu vidéo sous Phaser.",
+      "L’objectif était de concevoir un jeu vidéo multijoueur et interactif, qui fait intérafir les personnages avec les plateformes et les différentes scènes.",
+      "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/repaire-obscur"
+    ],
+    // Ajout de l'URL du site pour l'iframe interactive
+    iframeUrl: "https://marinesarlat.github.io/repaire-obscur/",
+   
+},
   {
     slug: "bref-marine-sarlat",                 // ← court, en minuscules, sans accents ni espaces (sert pour l'adresse /projets/mon-projet-video)
     title: "Bref je m'appelle Marine Sarlat",             // ← titre affiché
@@ -280,6 +324,7 @@ export const projects = [
     intro: [
       "Exercice de création d’un site web sous Next.js pour la mission Aurora, un projet fictif de recherche spatiale.",
       "L’objectif était de concevoir un site web responsive et interactif, avec une navigation fluide et des animations permettant de présenter les différentes sections de la mission ainsi que son équipage.",
+      "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/mission-aurora"
     ],
     // Ajout de l'URL du site pour l'iframe interactive
     iframeUrl: "https://mission-aurora-drab.vercel.app/",
@@ -315,13 +360,13 @@ export const projects = [
     image: "/projets/afficheFW.png",
     fit: "cover",
     summary:
-      "Affiche commerciale pour les commerçants de Vias, pour promouvoir le parc d'attractionsFabrikus World.",
+      "Affiche commerciale pour les commerçants de Vias, pour promouvoir le parc d'attractions Fabrikus World.",
     tags: ["Direction artistique", "Illustration", "Photoshop", "InDesign"],
     role: "Direction artistique, Illustration, Photoshop, InDesign",
     tools: "Illustrator, InDesign, Photoshop",
     intro: [
       "Affiche commerciale pour les commerçants de Vias, pour promouvoir le parc d'attractions Fabrikus World.",
-      "En suivant la direction artistique du parc, j'ai gardé les éléments indispensables demandé par mon entreprise en les intégrant dans un visuel festif et coloré, avec des éléments de Noël et des personnages du parc.",
+      "Cette affiche regroupe des éléments importants tel que le calendrirer d'ouverture du parc, et de ses principaux tarifs. J'ai travaillé sur la composition, les couleurs et les textures afin de créer un univers immersif, qui donnera envie aux touristes qui verront cette affiche, de venir au parc.",
     ],
     gallery: [
       { src: "/projets/afficheFW.png", caption: "Affiche commerciale Fabrikus World", wide: true },
@@ -345,6 +390,7 @@ export const projects = [
     ],
     gallery: [{ src: "/projets/wireframe-accueil.jpg", caption: "Page d'accueil et navigation en panneau", pad: true }],
   },
+  
 ];
 
 export const categories = ["Tout", ...Array.from(new Set(projects.map((p) => p.category)))];
