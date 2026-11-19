@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import Reveal from "@/components/Reveal";
 import { stats, sport, stage, creations } from "@/data/distinctions";
 
@@ -8,6 +9,9 @@ export const metadata = {
 };
 
 export default function DistinctionsPage() {
+  if (process.env.NODE_ENV === "production") {
+  notFound();
+}
   return (
     <>
             <section className="page-hero">
