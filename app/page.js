@@ -27,7 +27,7 @@ export default function Home() {
               </Link>
               <a href="#contact" className="btn ghost">Me contacter</a>
              
-            <a href="/cv-marine-sarlat.pdf" download className="btn soft">
+            <a href="/cv-marine-sarlat3.pdf" download className="btn soft">
               Télécharger mon CV <span className="arrow">↓</span>
             </a>
         
