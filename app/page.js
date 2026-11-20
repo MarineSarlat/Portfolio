@@ -25,12 +25,11 @@ export default function Home() {
               <Link href="/projets" className="btn">
                 Voir mes projets <span className="arrow">→</span>
               </Link>
-              <a href="#contact" className="btn ghost">Me contacter</a>
-             
+            
             <a href="/cv-marine-sarlat3.pdf" download className="btn soft">
               Télécharger mon CV <span className="arrow">↓</span>
             </a>
-        
+         <a href="#contact" className="btn ghost">Me contacter</a>
             </div>
           </div>
           <div className="arch">

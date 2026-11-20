@@ -7,7 +7,7 @@
 export const projects = [
   {
     slug: "site-portfolio",
-    title: "Projet personelle : déployement de mon portfolio profesionnel",
+    title: "Projet personnel : déploiement de mon portfolio professionnel",
     category: "Web",
     year: "2026",
     image: "/projets/portfolio.png",
@@ -92,30 +92,30 @@ export const projects = [
       { src: "/projets/bob2.webp", caption: "Vue de face maisons - 3D", wide: true, pad: true }],
   },
   {
-    slug: "b-roll",                 // ← court, en minuscules, sans accents ni espaces (sert pour l'adresse /projets/mon-projet-video)
-    title: "B-Roll",             // ← titre affiché
+    slug: "bref-marine-sarlat",                 // ← court, en minuscules, sans accents ni espaces (sert pour l'adresse /projets/mon-projet-video)
+    title: "Bref je m'appelle Marine Sarlat",             // ← titre affiché
     category: "Audiovisuel",                  // ← catégorie : crée le filtre automatiquement
     year: "2025",                             // ← année
-    image: "/projets/B-Roll.png",   // ← IMAGE de la carte (voir étape 2)
+    image: "/projets/Bref.png",   // ← IMAGE de la carte (voir étape 2)
     fit: "cover",                             // "cover" = image remplit la carte, "contain" = image entière visible
-    summary: "Réalisation d'une vidéo présentant la recette d'un smoothie bowl", // ←
+    summary: "Création d'un CV vidéo pour ma recherche d'alternance", // ←
     tags: ["Audiovisuel", "Montage", "Vidéo"],        // ← petits mots-clés
-    role: "Écriture, réalisation,figuration",             // ← ton rôle (page projet)
+    role: "Écriture, réalisation, figuration, montage",             // ← ton rôle (page projet)
     tools: "DaVinci Resolve",                    // ← tes outils (page projet)
     intro: [
-      "Vidéo de présentation de la recette d'un smoothie bowl",   // ← 
-      "En équipe nous avons créé un storyboard en réfléchissant préciser aux transisiotns entre les plans pour recréer le style B-Roll.", // ←
+      "Création d'un CV vidéo pour ma recherche d'alternance",   // ← 
+      "Projet personnel dans lequel je me suis fixé pour objectif de me présenter en 75 secondes, en étant accrocheuse et percutante, tout en expliquant qui je suis et en retraçant mon parcours.", 
     ],
-    pdfUrl: "/projets/broll.pdf",
     gallery: [
       // 👇 TA VIDÉO YOUTUBE : colle simplement le lien de la vidéo
-      { embed: "https://youtu.be/I_az7UBsXU0", caption: "B-Roll", wide: true },
+      { embed: "https://youtu.be/8KaYJG0k8Sc?si=QIvPjdQzsJ9H1rZn", caption: "Bref", wide: true },
 
       // Tu peux ajouter d'autres vidéos ou des images à la suite :
       // { embed: "https://youtu.be/YYYYYYYYYYY", caption: "Deuxième vidéo", wide: true },
       // { src: "/projets/autre-image.jpg", caption: "Une image du projet", wide: true },
     ],
   },
+  
   {
     slug: "site-jeu-unity",
     title: "Premier jeu vidéo sous Unity : Les Dents de la Mer Enfant ",
@@ -130,7 +130,7 @@ export const projects = [
     tools: "Unity, C#",
     intro: [
       "Exercice de création d’un jeu vidéo sous Unity.",
-      "L'objectif était de créé un jeu qui prend en compte des collision entre le jouer principal et les ennemis, ainsi que la gestion de la vie du joueur et des ennemis. J'ai également travaillé sur l'interface utilisateur pour afficher la vie du joueur et le score.",
+      "L’objectif était de créer un jeu intégrant la gestion des collisions entre le joueur et les ennemis, ainsi que le système de vie du joueur et des ennemis. J’ai également travaillé sur l’interface utilisateur afin d’afficher les points de vie du joueur et son score.",
     ],
     // Ajout de l'iframe interactive Itch.io
     iframeUrl: "https://itch.io/embed-upload/20647945?color=333333",
@@ -278,7 +278,7 @@ export const projects = [
     tools: "Phaser, JavaScript",
     intro: [
       "Exercice de création d’un jeu vidéo sous Phaser.",
-      "L’objectif était de concevoir un jeu vidéo multijoueur et interactif, qui fait intérafir les personnages avec les plateformes et les différentes scènes.",
+      "L’objectif était de concevoir un jeu vidéo multijoueur et interactif, dans lequel les personnages peuvent interagir avec les plateformes et évoluer à travers différentes scènes.",
       "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/repaire-obscur"
     ],
     // Ajout de l'URL du site pour l'iframe interactive
@@ -286,23 +286,24 @@ export const projects = [
    
 },
   {
-    slug: "bref-marine-sarlat",                 // ← court, en minuscules, sans accents ni espaces (sert pour l'adresse /projets/mon-projet-video)
-    title: "Bref je m'appelle Marine Sarlat",             // ← titre affiché
+    slug: "b-roll",                 // ← court, en minuscules, sans accents ni espaces (sert pour l'adresse /projets/mon-projet-video)
+    title: "B-Roll",             // ← titre affiché
     category: "Audiovisuel",                  // ← catégorie : crée le filtre automatiquement
     year: "2025",                             // ← année
-    image: "/projets/Bref.png",   // ← IMAGE de la carte (voir étape 2)
+    image: "/projets/B-Roll.png",   // ← IMAGE de la carte (voir étape 2)
     fit: "cover",                             // "cover" = image remplit la carte, "contain" = image entière visible
-    summary: "Création d'un CV vidéo pour ma recherche d'alternance", // ←
+    summary: "Réalisation d'une vidéo présentant la recette d'un smoothie bowl", // ←
     tags: ["Audiovisuel", "Montage", "Vidéo"],        // ← petits mots-clés
-    role: "Écriture, réalisation, figuration, montage",             // ← ton rôle (page projet)
+    role: "Écriture, réalisation,figuration",             // ← ton rôle (page projet)
     tools: "DaVinci Resolve",                    // ← tes outils (page projet)
     intro: [
-      "Création d'un CV vidéo pour ma recherche d'alternance",   // ← 
-      "Projet personelle dans lequel je me suis fixé pour objectif, en 75 seconds, être accrocheuse et percutante, tout en expliquant qui je suis et mon parcours.", // ←
+      "Vidéo de présentation de la recette d'un smoothie bowl",   // ← 
+      "En équipe nous avons créé un storyboard en réfléchissant préciser aux transisiotns entre les plans pour recréer le style B-Roll.", // ←
     ],
+    pdfUrl: "/projets/broll.pdf",
     gallery: [
       // 👇 TA VIDÉO YOUTUBE : colle simplement le lien de la vidéo
-      { embed: "https://youtu.be/8KaYJG0k8Sc?si=QIvPjdQzsJ9H1rZn", caption: "Bref", wide: true },
+      { embed: "https://youtu.be/I_az7UBsXU0", caption: "B-Roll", wide: true },
 
       // Tu peux ajouter d'autres vidéos ou des images à la suite :
       // { embed: "https://youtu.be/YYYYYYYYYYY", caption: "Deuxième vidéo", wide: true },
@@ -366,7 +367,7 @@ export const projects = [
     tools: "Illustrator, InDesign, Photoshop",
     intro: [
       "Affiche commerciale pour les commerçants de Vias, pour promouvoir le parc d'attractions Fabrikus World.",
-      "Cette affiche regroupe des éléments importants tel que le calendrirer d'ouverture du parc, et de ses principaux tarifs. J'ai travaillé sur la composition, les couleurs et les textures afin de créer un univers immersif, qui donnera envie aux touristes qui verront cette affiche, de venir au parc.",
+      "Cette affiche regroupe des informations essentielles, telles que le calendrier d’ouverture du parc et ses principaux tarifs. J’ai travaillé sur la composition, les couleurs et les textures afin de créer un univers immersif et attractif, donnant envie aux touristes qui découvriront cette affiche de venir visiter le parc.",
     ],
     gallery: [
       { src: "/projets/afficheFW.png", caption: "Affiche commerciale Fabrikus World", wide: true },
@@ -386,7 +387,7 @@ export const projects = [
     tools: "Figma",
     intro: [
       "Maquette fonctionnelle du site d'un cabinet d'architecture : présentation des associés, projets récents, témoignages, distinction et inscription à la newsletter.",
-      "Les courbes en arrière-plan guident le regard le long de la page, et la navigation en panneau garde l'accès aux grandes expertises du cabinet toujours simple.",
+      "Les courbes en arrière-plan guident le regard le long de la page, et la navigation en panneau garde l'accès aux grandes expertises du cabinet.",
     ],
     gallery: [{ src: "/projets/wireframe-accueil.jpg", caption: "Page d'accueil et navigation en panneau", pad: true }],
   },
