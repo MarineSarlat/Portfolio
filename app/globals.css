@@ -432,18 +432,21 @@ em {
 .project-card {
   display: block;
 }
-.project-media {
+ .project-media {
   position: relative;
   aspect-ratio: 4 / 3;
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--sand);
-  box-shadow: var(--shadow);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid rgba(43, 21, 48, 0.18);
+  box-shadow: 0 14px 32px rgba(43, 21, 48, 0.11);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
+
 .project-card:hover .project-media {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+  border-color: rgba(179, 38, 107, 0.35);
+  box-shadow: 0 22px 44px rgba(43, 21, 48, 0.16);
 }
 .project-media img {
   position: absolute;
@@ -468,6 +471,7 @@ em {
   padding: 6px 15px;
   border-radius: 999px;
   background: rgba(251, 245, 240, 0.94);
+  border: 1px solid rgba(43, 21, 48, 0.18);
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--ink);

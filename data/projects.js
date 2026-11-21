@@ -20,7 +20,7 @@ export const projects = [
     intro: [
       "Développement complet d’un site web professionnel en Next.js pour présenter mes projets et mon parcours.",
       "L’objectif était de créer un site web responsive et interactif, avec une navigation fluide et des animations pour présenter les différentes sections de mon portfolio et mes projets.",
-      "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/Portfolio"
+     <a href="https://github.com/MarineSarlat/Portfolio" target="_blank" rel="noopener noreferrer">Cliquer ici pour consulter mon code source</a>
     ],
     // Ajout de l'URL du site pour l'iframe interactive
     iframeUrl: "https://portfolio-marine.vercel.app/",
@@ -236,7 +236,8 @@ export const projects = [
     intro: [
       "Réalisation d’un site web sous Next.js destiné aux passionnés de séries.",
       "J’ai travaillé sur la mise en place d’un système d’authentification avec gestion des erreurs à l’aide de Better Auth. Le site repose sur un ensemble de _components et d’_actions, ainsi que sur des relations avec une base de données permettant de stocker, gérer et récupérer correctement les données.",
-     "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/SiteWeb5-mi-session-2"
+     <a href="https://github.com/MarineSarlat/SiteWeb5-mi-session-2" target="_blank" rel="noopener noreferrer">Cliquer ici pour consulter mon code source</a>
+     
     ],
     gallery: [{ src: "/projets/cineclub1.png", caption: "page-connexion", wide: true, pad: true }, 
       { src: "/projets/cineclub2.png", caption: "page-site", wide: true, pad: true },
@@ -279,7 +280,8 @@ export const projects = [
     intro: [
       "Exercice de création d’un jeu vidéo sous Phaser.",
       "L’objectif était de concevoir un jeu vidéo multijoueur et interactif, dans lequel les personnages peuvent interagir avec les plateformes et évoluer à travers différentes scènes.",
-      "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/repaire-obscur"
+      <a href="https://github.com/MarineSarlat/repaire-obscur" target="_blank" rel="noopener noreferrer">Cliquer ici pour consulter mon code source</a>
+      
     ],
     // Ajout de l'URL du site pour l'iframe interactive
     iframeUrl: "https://marinesarlat.github.io/repaire-obscur/",
