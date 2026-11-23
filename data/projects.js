@@ -16,7 +16,7 @@ export const projects = [
       "Développement complet d’un site web professionnel en Next.js pour présenter mes projets et mon parcours.",
     tags: ["Prestashop", "PHP", "CSS", "UI/UX"],
     role: "Intégration, Développement, Design",
-    tools: "Prestashop",
+    tools: "Next.js, React",
     intro: [
       "Développement complet d’un site web professionnel en Next.js pour présenter mes projets et mon parcours.",
       "L’objectif était de créer un site web responsive et interactif, avec une navigation fluide et des animations pour présenter les différentes sections de mon portfolio et mes projets.",
@@ -327,7 +327,8 @@ export const projects = [
     intro: [
       "Exercice de création d’un site web sous Next.js pour la mission Aurora, un projet fictif de recherche spatiale.",
       "L’objectif était de concevoir un site web responsive et interactif, avec une navigation fluide et des animations permettant de présenter les différentes sections de la mission ainsi que son équipage.",
-      "Copier-coller ce lien pour consulter mon code source : https://github.com/MarineSarlat/mission-aurora"
+      <a href="https://github.com/MarineSarlat/mission-aurora" target="_blank" rel="noopener noreferrer">Cliquer ici pour consulter mon code source</a>
+     
     ],
     // Ajout de l'URL du site pour l'iframe interactive
     iframeUrl: "https://mission-aurora-drab.vercel.app/",

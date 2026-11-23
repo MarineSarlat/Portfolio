@@ -2,7 +2,7 @@
 export const site = {
   name: "Marine Sarlat",
   tagline:
-    "Étudiante polyvalente, je suis spécialisé en développemennt web.",
+    "Étudiante polyvalente, je m'apelle Marine Sarlat et je suis spécialisée en développement web.",
   email: "marinesarlat31@gmail.com", // ← remplace par ton adresse
   location: "Montpellier/Béziers, France", // ← remplace par ta ville
   availability: "Disponible pour de nouveaux projets",
@@ -51,7 +51,7 @@ export const skills = [
 export const tools = ["HTML", "CSS", "JavaScript", "Php","WordPress", "Prestashop", "Davinci Resolve", "Photoshop", "Illustrator", "InDesign", "Figma", "3Ds Max", "Unity"];
 
 export const timeline = [
-  { year: "2025-2026", title: "Alternance en Communication Digitale", place: "Fabrikus World", text: "Durant mon alternance chez Fabrikus World, j’étais en charge de la communication multicanale du parc (Instagram, Facebook, TikTok, LinkedIn). En haute saison, j’ai optimisé la cadence de publication avec jusqu’à 5 posts par semaine et 3 stories par jour. Grâce à des jeux-concours et des partenariats stratégiques, j’ai dynamisé la communauté, atteignant une croissance record de 644 abonnés en un mois sur Instagram et un pic de 4 300 interactions. En complément, j’ai géré l’e-réputation, rédigé des articles de blog optimisés pour le SEO (Yoast SEO) et piloté des campagnes d’e-mailing via ActiveCampaign (avec un taux d’ouverture stable de 20 %)." },
+  { year: "2025-2026", title: "Alternance en Communication Digitale", place: "Fabrikus World", text: "Durant mon alternance chez Fabrikus World, j’étais en charge de la communication multicanale du parc (Instagram, Facebook, TikTok, LinkedIn). En haute saison, j’ai optimisé la cadence de publication en créant un calendrier éditorial avec jusqu’à 5 posts par semaine et 3 stories par jour. Grâce à des jeux-concours et des partenariats stratégiques, j’ai dynamisé la communauté, atteignant une croissance record de 644 abonnés en un mois sur Instagram et un pic de 4 300 interactions. En complément, j’ai géré l’e-réputation, rédigé des articles de blog optimisés pour le SEO (Yoast SEO) et piloté des campagnes d’e-mailing via ActiveCampaign (avec un taux d’ouverture stable de 20 %)." },
   { year: "janvier 2026", title: "Cheffe de projet digital & Intégration WordPress", place: "Emilie Limiè, chanteuse", text: "En tant que cheffe de projet lors de l’événement pédagogique « Marathon MMI 2026 », j’ai coordonné une équipe de 6 personnes pour concevoir, en seulement 4 jours, une communication numérique globale (charte graphique, affiches, interview vidéo et site WordPress). J’ai également pris en charge la conception technique et l’intégration complète du site web sous WordPress. La qualité de notre travail a convaincu la cliente, Emilie Limiè, de remplacer définitivement son ancien site par le nouveau que nous avions réalisé." },
   { year: "avril 2025", title: "Trophée Bronze au concours vidéo “Je filme ma formation”", place: "Prix dans la catégorie “Enseignement Supérieur” sur 588 vidéos sélectionnées", text: "Création d’une vidéo promotionnelle de 3 minutes sur la formation BUT MMI de l’IUT de Béziers, en équipe de 4. Pour mener à bien ce projet, nous avons élaboré un découpage technique afin de structurer les différentes étapes de réalisation." },
   { year: "2022-Aujourd'hui", title: "Chorégraphe", place: "C Comme Comédie, Vendargues", text: "Création de chorégraphies de comédie musicale pour l'association." },
