@@ -96,7 +96,7 @@ export const projects = [
     title: "LGS - Maquette du site d'un cabinet d'architecture",
     category: "UX/UI",
     year: "2026",
-    image: "/projets/accueil1.jpg",
+    image: "/projets/accueil1.png",
     fit: "cover",
     summary:
       "Maquette de la page d'accueil et de la navigation en panneau pour un cabinet d'architecture.",
