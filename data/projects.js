@@ -92,6 +92,29 @@ export const projects = [
       { src: "/projets/bob2.webp", caption: "Vue de face maisons - 3D", wide: true, pad: true }],
   },
   {
+    slug: "maquette-site-cabinet-architecture",
+    title: "LGS - Maquette du site d'un cabinet d'architecture",
+    category: "UX/UI",
+    year: "2026",
+    image: "/projets/accueil1.jpg",
+    fit: "cover",
+    summary:
+      "Maquette de la page d'accueil et de la navigation en panneau pour un cabinet d'architecture.",
+    tags: ["Wireframe", "Architecture de l'information", "UX"],
+    role: "UX design, wireframes, maquette, prototypage",
+    tools: "Figma",
+    intro: [
+      "Maquette fonctionnelle du site d'un cabinet d'architecture : présentation des associés, projets récents, témoignages, distinction et inscription à la newsletter.",
+      "Les courbes en arrière-plan guident le regard le long de la page, et la navigation en panneau garde l'accès aux grandes expertises du cabinet.",
+    ],
+    gallery: [{ src: "/projets/maquette.png", caption: "Maquette de la page d'accueil et navigation en panneau", pad: true },
+      { src: "/projets/accueil1.png", caption: "Page d'accueil version desktop", pad: true },
+      { src: "/projets/accueil2.png", caption: "Page d'accueil version desktop - 2", pad: true },
+      { src: "/projets/accueil3.png", caption: "Page d'accueil version desktop - 3", pad: true },
+      { src: "/projets/panneaudenavigation.png", caption: "Navigation en panneau", pad: true }
+    ],
+  },
+  {
     slug: "bref-marine-sarlat",                 // ← court, en minuscules, sans accents ni espaces (sert pour l'adresse /projets/mon-projet-video)
     title: "Bref je m'appelle Marine Sarlat",             // ← titre affiché
     category: "Audiovisuel",                  // ← catégorie : crée le filtre automatiquement
@@ -376,24 +399,7 @@ export const projects = [
       { src: "/projets/afficheFW.png", caption: "Affiche commerciale Fabrikus World", wide: true },
     ],
   },
-  {
-    slug: "maquette-site-cabinet-architecture",
-    title: "LGS - Maquette du site d'un cabinet d'architecture",
-    category: "UX/UI",
-    year: "2026",
-    image: "/projets/wireframe-cover.jpg",
-    fit: "cover",
-    summary:
-      "Wireframes de la page d'accueil et de la navigation en panneau pour un cabinet d'architecture.",
-    tags: ["Wireframe", "Architecture de l'information", "UX"],
-    role: "UX design, wireframes, maquette, prototypage",
-    tools: "Figma",
-    intro: [
-      "Maquette fonctionnelle du site d'un cabinet d'architecture : présentation des associés, projets récents, témoignages, distinction et inscription à la newsletter.",
-      "Les courbes en arrière-plan guident le regard le long de la page, et la navigation en panneau garde l'accès aux grandes expertises du cabinet.",
-    ],
-    gallery: [{ src: "/projets/wireframe-accueil.jpg", caption: "Page d'accueil et navigation en panneau", pad: true }],
-  },
+  
   
 ];
 
